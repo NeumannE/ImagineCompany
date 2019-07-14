@@ -9,8 +9,8 @@
 
   //připojení k databázi
   $dbservername = "localhost";
-  $dbusername   = "neumanne99";
-  $dbpassword   = "Marbax5683";
+  $dbusername   = "root";
+  $dbpassword   = "";
   $dbname       = "registration";
   $db = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
   
