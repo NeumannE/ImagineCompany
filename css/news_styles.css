@@ -1,0 +1,74 @@
+/* CSS Document */
+  /*
+  používaná šedá barva  ->>#f2f2f2->>
+  s průhledností->>rgba(242, 242, 242, 0.5)
+  ------------------------------------------
+  používaná zelená barva->>#4CAF50->>
+  s pruhledností->>rgba(76, 175, 80, 0.5)
+  */
+
+
+/*clanky */
+#main_content{
+	margin-top: 65px;
+	
+}
+.id{
+	display: none;
+}
+.title{
+
+}
+.date1{
+	margin-top: -20px;
+	font-size: 15px;
+}
+.date2{
+	float: left;
+	height: 20px;
+	width: 90%;
+	
+}
+.text{
+	padding: 20px 0px;
+}
+
+/*formulaře */
+
+form{
+  background-color: rgba(76, 175, 80, 0.5);
+  width: 100%;
+  padding: 10px;
+  border-left: 8px solid #4CAF50;
+  color: #f2f2f2;
+}
+textarea{
+	resize: none;
+	width: 100%;
+	height: 200px;
+
+	padding: 12px 20px;
+    margin: 10px 0;
+    border: 3px solid #f2f2f2;
+    transition: 0.5s;
+    outline: none;
+}
+textarea:focus{
+	border: 3px solid #4CAF50;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 3px solid #f2f2f2;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus{
+    border: 3px solid #4CAF50;
+}
+
+.error{
+	color:red;
+}

@@ -1,0 +1,80 @@
+/* CSS Document */
+/*
+používaná šedá barva  ->>#f2f2f2->>
+s průhledností->>rgba(242, 242, 242, 0.5)
+------------------------------------------
+používaná zelená barva->>#4CAF50->>
+s pruhledností->>rgba(76, 175, 80, 0.5)
+*/
+/* formulare */
+form{
+  background-color: rgba(76, 175, 80, 0.5);
+  width: 300px;
+  margin: 70 auto;
+  padding: 10px;
+  border-left: 8px solid #4CAF50;
+  color: #f2f2f2;
+  transition: all 1.5s;
+}
+input[type=text], input[type=password], input[type = email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 3px solid #f2f2f2;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+    border: 3px solid #4CAF50;
+}
+
+/* animace tlacitka */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 28px;
+  padding: 12px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+a:hover{
+  text-decoration: none;
+  //color: #4CAF50;
+  color: blue;
+}
+
+.error{
+  color: #f2f2f2;
+}

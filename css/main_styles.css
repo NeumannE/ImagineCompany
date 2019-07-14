@@ -1,0 +1,210 @@
+/* CSS Document */
+ /*
+používaná šedá barva  ->>#f2f2f2->>
+s průhledností->>rgba(242, 242, 242, 0.5)
+------------------------------------------
+používaná zelená barva->>#4CAF50->>
+s pruhledností->>rgba(76, 175, 80, 0.5)
+*/
+/* cele telo */
+body{
+  background-image: url("../img/background05.jpg"); 
+  position:relative;
+  padding-bottom: 150px;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* cast tela, obsah */
+#divbody {
+  width: 80%;
+  margin: 0 auto;
+  }
+/* jokoby logo z textu */
+#logo{
+    text-shadow: 1px 1px black;
+    padding-top: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #4CAF50;
+    text-decoration: overline;
+}
+/* menu */
+.topnav {
+    border: 3px solid #ddd;
+}
+/* odkazy v menu */
+.topnav a {
+  display: block;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+/* barva po najeti na položku v menu */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+/* barva vybrane polozky v menu */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+	/* položky vpravo */ 
+.topnav-right {
+  float: right;
+
+}
+/*tlacitko v menu ve velke formě*/
+.topnav .icon {
+  display: none;
+}
+
+.topnav hr{
+	display: none;
+}
+
+/*zobbrazeni menu v male forme*/
+@media screen and (max-width: 800px) 
+{ 
+	.topnav hr
+	{
+		display: none;
+	}
+	.topnav a:not(:first-child), .topnav .topnav-right 
+	{
+		display: none;
+	}
+	.topnav a.icon 
+	{
+		float: right;
+		display: block;
+		
+	}
+}
+/*usporadani menu v male forme*/
+@media screen and (max-width: 800px) 
+{
+	.topnav.responsive hr
+	{
+		display: block;
+	}
+	.topnav.responsive
+	{
+		background-color: rgba(76, 175, 80, 0.5);
+		position: relative;
+	}
+	.topnav.responsive a.icon
+	{
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+	.topnav.responsive a
+	{
+    	float: none;
+    	display: block;
+    	text-align: left;
+  	}
+}
+
+  /*paticka celek*/
+#footer {
+  color: #4CAF50;
+  border-top: 5px solid #efefef;
+  //border-left: 3px solid #efefef;
+  //border-right: 3px solid #efefef;
+  
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  left: 10%;
+  padding:10px;
+  background-color: rgba(242, 242, 242, 0.5);
+  text-align: center;
+}
+
+#footer p{
+    color: black; 
+}
+/*paticka logo*/
+#logo_footer{
+  text-shadow: 1px 1px black;
+  text-decoration: overline;
+  text-transform: uppercase;
+  float: left;
+  position: absolute;
+  top: 0;
+  height:70px;
+  width:100px;
+  margin-top: -5px;
+  //border: 1px solid black;
+}
+
+#user_info{
+  border-top: 2px solid #f2f2f2;
+  color:#f2f2f2;
+  top:0;
+  right:0;
+  position: absolute;
+  //border: solid black 1px;
+  padding:2px;
+}
+#user_info a{
+  float: right;
+  text-decoration: none;
+  color: #4CAF50;
+}
+.success{
+  color: #4CAF50;
+  margin-top: 50px;
+  //border: solid;
+}
+
+.eq{
+  display: none;
+}
+
+/*tabulka*/
+#users {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr{
+	background-color: rgba(242, 242, 242, 0.5);
+}
+
+#users tr:hover {background-color: #ddd;}
+td a {
+	color: black;
+text-decoration:none;
+}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  
+}
+#users th a{
+	color: white;
+	text-decoration: none;
+}
