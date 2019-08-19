@@ -76,10 +76,10 @@
           <?php echo htmlspecialchars($row['date']);?>
 			<p>Comments: 
 			<?php
-			$id = $row['id'];
-			$rows = mysqli_query($db, "SELECT * FROM comments WHERE post = '$id'");
-			$num_row = mysqli_num_rows($rows);									   
-			echo $num_row . "</p>";
+				$id = $row['id'];
+				$rows = mysqli_query($db, "SELECT * FROM comments WHERE post = '$id'");
+				$num_row = mysqli_num_rows($rows);									   
+				echo $num_row . "</p>";
 			?>
         </div>
 
